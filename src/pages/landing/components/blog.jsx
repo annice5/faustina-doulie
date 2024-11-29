@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const Blog = () => {
   return (
-     <section className="bg-white py-12 px-6 mt-36">
+    <section className="bg-white py-12 px-6 mt-36">
       <div className="max-w-screen-xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-4xl font-semibold text-gray-800 mb-8">
@@ -10,7 +10,7 @@ const Blog = () => {
         </h2>
         
         {/* Testimonials Container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Testimonial 1 */}
           <div className="bg-pink-100 p-6 rounded-lg shadow-lg">
             <p className="text-gray-600 text-lg italic mb-4">
@@ -70,7 +70,7 @@ const Blog = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Blog
+export default Blog;

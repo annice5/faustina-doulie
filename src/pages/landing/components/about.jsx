@@ -1,5 +1,3 @@
-
-
 const About = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-center py-16 px-4 bg-white">
@@ -9,7 +7,7 @@ const About = () => {
           <img
             src="https://via.placeholder.com/400" // Replace with your image URL
             alt="Delicious Cake"
-            className="rounded-full w-96 h-96 object-cover border-8 border-pink-100"
+            className="rounded-full w-80 h-80 object-cover border-8 border-pink-100" // Adjusted size for responsiveness
           />
         </div>
       </div>
@@ -19,7 +17,7 @@ const About = () => {
         <h4 className="text-orange-500 uppercase text-sm tracking-wide font-semibold">
           Fresh & Delicious
         </h4>
-        <h2 className="text-4xl font-bold text-gray-800 mt-2 leading-snug">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2 leading-snug">
           A Simple Way to Eating Delicious
         </h2>
         <p className="text-gray-600 mt-4 leading-relaxed">
@@ -31,11 +29,8 @@ const About = () => {
           Our Story
         </button>
       </div>
-
-     
     </section>
   );
+};
 
-}
-
-export default About
+export default About;
