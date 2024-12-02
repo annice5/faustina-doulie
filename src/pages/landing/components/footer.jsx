@@ -1,67 +1,100 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-pink-100 text-gray-600 py-8 mt-48">
-      <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-green-900 text-gray-100 py-12">
+      <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Column 1: Company Info */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Company</h3>
-          <ul>
-            <li><a href="/" className="hover:text-orange-500">About Us</a></li>
-            <li><a href="/" className="hover:text-orange-500">Careers</a></li>
-            <li><a href="/" className="hover:text-orange-500">Privacy Policy</a></li>
-            <li><a href="/" className="hover:text-orange-500">Terms of Service</a></li>
-          </ul>
+          <div className="flex items-center space-x-2">
+            <span className="text-2xl font-bold text-white">
+              FaustyDov<span className="text-green-500">Farms</span>
+            </span>
+          </div>
+          <p className="text-sm text-gray-300 mt-4">
+            Dedicated to providing high-quality products and exceptional service. We strive to cultivate excellence in every aspect of our business.
+          </p>
         </div>
 
         {/* Column 2: Quick Links */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul>
-            <li><a href="/" className="hover:text-orange-500">Home</a></li>
-            <li><a href="/" className="hover:text-orange-500">Products</a></li>
-            <li><a href="/" className="hover:text-orange-500">Blog</a></li>
-            <li><a href="/" className="hover:text-orange-500">Contact Us</a></li>
+          <h3 className="text-lg font-bold mb-4 text-green-300">Quick Links</h3>
+          <ul className="space-y-2">
+            {["Home", "About Us", "Services", "Products", "Testimonials"].map(
+              (link, index) => (
+                <li key={index}>
+                  <a
+                    href="/"
+                    className="hover:text-green-500 transition duration-200 font-medium"
+                  >
+                    {link}
+                  </a>
+                </li>
+              )
+            )}
           </ul>
         </div>
 
         {/* Column 3: Contact Info */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
-          <ul>
-            <li className="mb-2">Email: <a href="mailto:info@example.com" className="hover:text-orange-500">info@example.com</a></li>
-            <li className="mb-2">Phone: <a href="tel:+1234567890" className="hover:text-orange-500">+1 234 567 890</a></li>
-            <li className="mb-2">Address: 123 Street, City, Country</li>
+          <h3 className="text-lg font-bold mb-4 text-green-300">Contact Info</h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <span className="font-medium">Email:</span>{" "}
+              <a
+                href="mailto:info@example.com"
+                className="hover:text-green-500 transition duration-200"
+              >
+                info@example.com
+              </a>
+            </li>
+            <li>
+              <span className="font-medium">Phone:</span>{" "}
+              <a
+                href="tel:+1234567890"
+                className="hover:text-green-500 transition duration-200"
+              >
+                +1 234 567 890
+              </a>
+            </li>
+            <li>
+              <span className="font-medium">Address:</span> 123 Street, City,
+              Country
+            </li>
           </ul>
         </div>
 
         {/* Column 4: Social Media Links */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-          <div className="flex space-x-4 justify-center sm:justify-start">
-            <a href="https://facebook.com" className="text-white hover:text-orange-500">
-              <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+          <h3 className="text-lg font-bold mb-4 text-green-300">Follow Us</h3>
+          <div className="space-y-3">
+            <a
+              href="https://instagram.com"
+              className="flex items-center gap-3 text-sm font-medium hover:text-green-500 transition duration-200"
+            >
+              <Instagram className="text-green-500" size={20} />
+              Instagram
             </a>
-            <a href="https://twitter.com" className="text-white hover:text-orange-500">
-              <FontAwesomeIcon icon={['fab', 'twitter']} />
-            </a>
-            <a href="https://instagram.com" className="text-white hover:text-orange-500">
-              <FontAwesomeIcon icon={['fab', 'instagram']} />
-            </a>
-            <a href="https://linkedin.com" className="text-white hover:text-orange-500">
-              <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
+            <a
+              href="https://facebook.com"
+              className="flex items-center gap-3 text-sm font-medium hover:text-green-500 transition duration-200"
+            >
+              <Facebook className="text-green-500" size={20} />
+              Facebook
             </a>
           </div>
         </div>
       </div>
 
-      {/* Bottom Section with copyright */}
-      <div className="bg-pink-100 text-center py-4 mt-8">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      {/* Bottom Section with Copyright */}
+      <div className="border-t border-gray-700 mt-12 pt-6 text-center">
+        <p className="text-sm font-medium">
+          &copy; 2024 FaustyDovFarms. All rights reserved.
+        </p>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

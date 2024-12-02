@@ -13,9 +13,10 @@ const Landing = () => {
       <Navbar/>
       <Hero/>
       <About/>
-      <Product/>
       <Showcase/>
-       <Blog/>
+      <Product/>
+      <Blog/>
+       
       <Footer/>
     </div>
   )
