@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import hero from "../../../assets/hero.jpg";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   const text = "Delicious";
@@ -16,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-green-200 min-h-screen flex items-center relative overflow-hidden">
+    <section id="home" className="bg-green-200 min-h-screen flex items-center relative overflow-hidden">
       {/* Decorative Blur Circle */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-orange-500 opacity-30 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-16 relative z-10">
@@ -46,13 +47,15 @@ const Hero = () => {
           <p className="text-gray-600 text-lg leading-relaxed mt-4">
             Fortified powdered okro with a mix of <br /> Ginger, Garlic, and Ayoyo leaves.
           </p>
+          <Link to = 'products'>
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-green-900 text-white px-8 py-3 rounded-full shadow-md hover:bg-orange-600 transition-all duration-300 mt-6"
+            className="bg-green-900 text-white px-8 py-3 rounded-full shadow-md hover:bg-green-400 transition-all duration-300 mt-6"
           >
             Explore Menu
           </motion.button>
+          </Link>
         </div>
 
         {/* Right Image */}

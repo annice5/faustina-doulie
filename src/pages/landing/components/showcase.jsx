@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Showcase = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-green-200 to-gray-100 mt-36 px-6 overflow-hidden">
+    <section id="services" className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-green-200 to-gray-100 mt-36 px-6 overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-green-300 opacity-30 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-pink-200 opacity-30 rounded-full blur-3xl transform translate-x-1/3 translate-y-1/3"></div>
@@ -15,7 +15,7 @@ const Showcase = () => {
         className="text-center"
       >
         <h4 className="text-green-900 uppercase text-sm tracking-wide font-semibold">
-          Service
+          Services
         </h4>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
           Watch Our Story

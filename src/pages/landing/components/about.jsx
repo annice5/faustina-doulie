@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center py-16 px-6 bg-white relative overflow-hidden">
+    <section id="aboutus" className="flex flex-col md:flex-row items-center justify-center py-16 px-6 bg-white relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-green-200 opacity-30 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-pink-200 opacity-30 rounded-full blur-3xl transform translate-x-1/3 translate-y-1/3"></div>
@@ -44,13 +45,15 @@ const About = () => {
           enriched with natural ingredients like ginger, garlic, and ayoyo
           leaves for a unique flavor that redefines healthy eating.
         </p>
-        <motion.button
+       <Link to="services">
+       <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-6 px-6 py-3 bg-green-900 text-white rounded-full shadow-md hover:bg-orange-600 transition-all duration-300"
+          className="mt-6 px-6 py-3 bg-green-900 text-white rounded-full shadow-md hover:bg-green-400 transition-all duration-300"
         >
           Learn More
         </motion.button>
+       </Link>
       </motion.div>
     </section>
   );

@@ -24,7 +24,7 @@ const Product = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-green-50 to-white">
+    <section id="products" className="py-16 bg-gradient-to-b from-green-50 to-white">
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-12">
@@ -60,7 +60,7 @@ const Product = () => {
                 <p className="text-gray-600 text-sm">{product.description}</p>
                 <div className="flex justify-between items-center">
                   <p className="text-green-900 font-semibold text-lg">{product.price}</p>
-                  <button className="px-4 py-2 bg-green-900 text-white rounded-full shadow-md hover:bg-orange-600 transition-all">
+                  <button className="px-4 py-2 bg-green-900 text-white rounded-full shadow-md hover:bg-green-400 transition-all">
                     Buy Now
                   </button>
                 </div>

@@ -1,5 +1,6 @@
 import { Search } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,13 +19,15 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-8">
           {["Home", "About Us", "Services", "Products", "Testimonials"].map(
             (link, index) => (
-              <a
+              <Link
                 key={index}
-                href={`#${link.toLowerCase().replace(/\s+/g, "")}`}
-                className="text-green-900 hover:text-green-500 font-medium transition-colors duration-300"
+                to={link.toLowerCase().replace(/\s+/g, "")}
+                smooth={true}
+                duration={500}
+                className="text-green-900 hover:text-green-500 font-medium transition-colors duration-300 cursor-pointer"
               >
                 {link}
-              </a>
+              </Link>
             )
           )}
         </nav>
@@ -86,22 +89,21 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-lg py-6 px-8 space-y-4">
           {["Home", "About Us", "Services", "Products", "Testimonials"].map(
             (link, index) => (
-              <a
+              <Link
                 key={index}
-                href={`#${link.toLowerCase().replace(/\s+/g, "")}`}
-                className="block text-green-900 hover:text-green-500 font-medium transition-colors duration-300"
+                to={link.toLowerCase().replace(/\s+/g, "")}
+                smooth={true}
+                duration={500}
+                className="block text-green-900 hover:text-green-500 font-medium transition-colors duration-300 cursor-pointer"
               >
                 {link}
-              </a>
+              </Link>
             )
           )}
           <div className="flex items-center space-x-2">
             <span className="text-green-500">📞</span>
             <span className="text-green-900">0543028885</span>
           </div>
-          <button className="w-full bg-green-900 text-white py-2 rounded-lg hover:bg-green-500 transition-all">
-            Order Online
-          </button>
         </div>
       )}
     </header>

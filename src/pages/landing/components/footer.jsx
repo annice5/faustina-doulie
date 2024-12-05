@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Facebook, Instagram } from "lucide-react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -24,12 +25,14 @@ const Footer = () => {
             {["Home", "About Us", "Services", "Products", "Testimonials"].map(
               (link, index) => (
                 <li key={index}>
-                  <a
-                    href="/"
-                    className="hover:text-green-500 transition duration-200 font-medium"
+                  <Link
+                    to={link.toLowerCase().replace(/\s+/g, "")}
+                    smooth={true}
+                    duration={500}
+                    className="hover:text-green-500 transition duration-200 font-medium cursor-pointer"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               )
             )}

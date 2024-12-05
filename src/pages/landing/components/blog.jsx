@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
   return (
-    <section className="bg-gradient-to-r from-green-100 via-white to-green-100 py-12 px-6 mt-36">
+    <section id='testimonials' className="bg-gradient-to-r from-green-100 via-white to-green-100 py-12 px-6 mt-36">
       <div className="max-w-screen-xl mx-auto text-center">
         {/* Heading */}
         <h4 className="text-green-900 uppercase text-sm tracking-wide font-semibold">
