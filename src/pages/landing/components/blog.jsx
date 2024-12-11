@@ -16,59 +16,53 @@ const Blog = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Testimonial 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <p className='text-gray-800 text-lg font-bold mb-6'>
+          Convenience and Quality!
+            </p>
             <p className="text-gray-600 text-lg italic mb-6">
-              "The best service I have ever used. They truly care about their
-              clients and go above and beyond to meet our needs."
+            "Cooking with FaustyDov’s fortified powdered okro is a game-changer! It’s so convenient to use, and the flavor it brings is unmatched. My kids love it, and I’ve even noticed an improvement in my digestion since I started using it. Highly recommended to anyone who loves good food!"
             </p>
             <div className="flex items-center">
-              <img
-                src="https://via.placeholder.com/60"
-                alt="Client 1"
-                className="rounded-full w-16 h-16 object-cover border-2 border-green-500 mr-4"
-              />
+              
               <div>
-                <p className="font-semibold text-gray-800">Jane Doe</p>
-                <p className="text-gray-500 text-sm">CEO, Example Corp</p>
+                <p className="font-semibold text-gray-800">— Kwame Asiedu, Kumasi</p>
+               
               </div>
             </div>
           </div>
 
           {/* Testimonial 2 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <p className='text-gray-800 text-lg font-bold mb-6'>
+          A Taste Worth Sharing!
+            </p>
             <p className="text-gray-600 text-lg italic mb-6">
-              "A fantastic experience. The team was professional, and the
-              results exceeded my expectations. Highly recommended!"
+            "I bought FaustyDov Farms’ powdered okro on a friend’s recommendation, and I can’t thank her enough! The ginger and garlic give it a unique kick, and the ayoyo leaves add such richness to my stews. I’ve been telling everyone I know about this amazing product!"
             </p>
             <div className="flex items-center">
-              <img
-                src="https://via.placeholder.com/60"
-                alt="Client 2"
-                className="rounded-full w-16 h-16 object-cover border-2 border-green-500 mr-4"
-              />
+             
               <div>
-                <p className="font-semibold text-gray-800">John Smith</p>
-                <p className="text-gray-500 text-sm">Founder, Startup XYZ</p>
+                <p className="font-semibold text-gray-800">— Esi Larbi, Takoradi
+
+              </p>
+               
               </div>
             </div>
           </div>
 
           {/* Testimonial 3 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <p className='text-gray-800 text-lg font-bold mb-6'>
+            Health and Taste Combined!
+            </p>
             <p className="text-gray-600 text-lg italic mb-6">
-              "I have worked with many companies, but none compare to the level
-              of service I received here. They’re simply the best!"
+            "I’ve never tasted powdered okro like this before! The unique blend of ginger, garlic, and ayoyo leaves takes my soups to a whole new level. Not only is it delicious, but it also feels like I’m feeding my family something incredibly healthy. FaustyDov Farms, you have a loyal customer for life!"
             </p>
             <div className="flex items-center">
-              <img
-                src="https://via.placeholder.com/60"
-                alt="Client 3"
-                className="rounded-full w-16 h-16 object-cover border-2 border-green-500 mr-4"
-              />
+              
               <div>
-                <p className="font-semibold text-gray-800">Emily Johnson</p>
-                <p className="text-gray-500 text-sm">
-                  Marketing Director, BrandX
-                </p>
+                <p className="font-semibold text-gray-800">— Abena Mensah, Accra</p>
+                
               </div>
             </div>
           </div>

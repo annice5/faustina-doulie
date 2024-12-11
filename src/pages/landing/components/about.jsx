@@ -41,9 +41,9 @@ const About = () => {
           A Simple Way to Enjoy Deliciousness
         </h2>
         <p className="text-gray-600 mt-4 leading-relaxed">
-          Experience the best of nature in every bite. Our powdered okro is
-          enriched with natural ingredients like ginger, garlic, and ayoyo
-          leaves for a unique flavor that redefines healthy eating.
+        At FaustyDov Farms, we believe in bringing nature’s best to your kitchen! Nestled in the heart of Ghana, our journey begins right on our very own lush okro farm. We take pride in growing the finest, freshest okro, handpicked at its peak to ensure top-notch quality for our customers.But we didn’t stop there! Inspired by the rich culinary traditions of our ancestors, we’ve perfected a unique blend that goes beyond ordinary powdered okro. By mixing our fresh okro with the natural goodness of Ginger, Garlic, and Ayoyo Leaves, we’ve created a product that’s as nutritious as it is flavorful. Our fortified powdered okro is not just food,it’s a wholesome experience designed to delight your taste buds and nourish your body.
+
+
         </p>
        <Link to="services">
        <motion.button

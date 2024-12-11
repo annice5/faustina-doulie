@@ -4,6 +4,17 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = () => {
+    if (searchTerm.trim()) {
+      alert(`You searched for: ${searchTerm}`);
+      // Optionally, implement actual search functionality here.
+      setSearchTerm("");
+      setIsSearchOpen(false); // Close the search bar after search
+    }
+  };
 
   return (
     <header className="bg-gradient-to-r from-green-50 via-white to-green-50 shadow-md sticky top-0 z-50">
@@ -38,7 +49,10 @@ const Navbar = () => {
             <span className="text-green-500">📞</span>
             <span>0543028885</span>
           </div>
-          <button className="w-10 h-10 flex items-center justify-center bg-green-900 text-white rounded-full hover:bg-green-500 transition duration-300">
+          <button
+            onClick={() => setIsSearchOpen(!isSearchOpen)}
+            className="w-10 h-10 flex items-center justify-center bg-green-900 text-white rounded-full hover:bg-green-500 transition duration-300"
+          >
             <Search />
           </button>
         </div>
@@ -83,6 +97,25 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {/* Search Bar */}
+      {isSearchOpen && (
+        <div className="absolute inset-x-0 top-16 bg-white shadow-md py-4 px-6 flex items-center space-x-4">
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="Search..."
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-green-500"
+          />
+          <button
+            onClick={handleSearch}
+            className="px-4 py-2 bg-green-900 text-white rounded-md hover:bg-green-500 transition duration-300"
+          >
+            Search
+          </button>
+        </div>
+      )}
 
       {/* Mobile Menu */}
       {isMenuOpen && (
