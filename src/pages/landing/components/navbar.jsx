@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6">
           <div className="text-green-900 font-medium flex items-center space-x-2">
             <span className="text-green-500">📞</span>
-            <span>0543028885</span>
+            <span>0540444828</span>
           </div>
           <button
             onClick={() => setIsSearchOpen(!isSearchOpen)}
@@ -135,7 +135,7 @@ const Navbar = () => {
           )}
           <div className="flex items-center space-x-2">
             <span className="text-green-500">📞</span>
-            <span className="text-green-900">0543028885</span>
+            <span className="text-green-900">0540444828</span>
           </div>
         </div>
       )}

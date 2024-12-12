@@ -49,7 +49,7 @@ const Footer = () => {
                 href="mailto:info@example.com"
                 className="hover:text-green-500 transition duration-200"
               >
-                info@example.com
+                faustimash@gmail.com
               </a>
             </li>
             <li>
@@ -58,12 +58,11 @@ const Footer = () => {
                 href="tel:+1234567890"
                 className="hover:text-green-500 transition duration-200"
               >
-                +1 234 567 890
+                +233 540444828
               </a>
             </li>
             <li>
-              <span className="font-medium">Address:</span> 123 Street, City,
-              Country
+              <span className="font-medium">Address:</span> Drobonso-Ashanti Region
             </li>
           </ul>
         </div>

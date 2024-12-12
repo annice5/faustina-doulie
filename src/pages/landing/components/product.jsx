@@ -8,21 +8,21 @@ const Product = () => {
       id: 1,
       name: "Powdered Okro One",
       description: "Delicious and nutritious powdered okro, perfect for soups.",
-      price: "GH20",
+      price: "GH15",
       image: "https://via.placeholder.com/300x200?text=Sweetheart",
     },
     {
       id: 2,
       name: "Powdered Okro Two",
       description: "Healthy powdered okro made with the finest ingredients.",
-      price: "GH20",
+      price: "GH25",
       image: "https://via.placeholder.com/300x200?text=Blackforest",
     },
     {
       id: 3,
       name: "Powdered Okro Three",
       description: "Premium quality powdered okro for your cooking needs.",
-      price: "GH20",
+      price: "GH35",
       image: "https://via.placeholder.com/300x200?text=Chocolate",
     },
   ];
@@ -102,7 +102,7 @@ const Product = () => {
             <h2 className="text-xl font-bold text-gray-800 mb-4">
               {selectedProduct.name}
             </h2>
-            <p className="text-gray-600 mb-4 font-bold font-serif"> Call 0543028885 To Buy!</p>
+            <p className="text-gray-600 mb-4 font-bold font-serif"> Call 0540444828 To Buy!</p>
             <p className="text-green-900 font-semibold text-lg mb-6">
               Price: {selectedProduct.price}
             </p>
