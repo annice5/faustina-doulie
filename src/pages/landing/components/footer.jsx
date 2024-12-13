@@ -72,14 +72,14 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4 text-green-300">Follow Us</h3>
           <div className="space-y-3">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/faustidov_farms/profilecard/?igsh=em9rMWV1cGQ2Nmdr"
               className="flex items-center gap-3 text-sm font-medium hover:text-green-500 transition duration-200"
             >
               <Instagram className="text-green-500" size={20} />
               Instagram
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61570138089191"
               className="flex items-center gap-3 text-sm font-medium hover:text-green-500 transition duration-200"
             >
               <Facebook className="text-green-500" size={20} />
